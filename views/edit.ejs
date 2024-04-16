@@ -1,0 +1,62 @@
+<%- include("_header") %>
+
+<body>
+  <h1>Edit</h1>
+
+  <form
+    action="/tasks/update/<%= tasks.id %>"
+    method="POST"
+  >
+    <label for="name">Name</label>
+    <input
+      id="name"
+      name="name"
+      type="text"
+      value="<%= tasks.name %>"
+      placeholder="Name ..."
+    />
+
+    <br />
+
+    <label for="description">Description</label>
+    <input
+      id="description"
+      name="description"
+      type="text"
+      value="<%= tasks.description %>"
+      placeholder="Description ..."
+    />
+
+    <br />
+
+    <label for="date_debut">Date de début</label>
+    <input
+      id="date_debut"
+      name="date_debut"
+      value="<%= tasks.date_debut %>"
+      type="date"
+      placeholder="Date de début ..."
+    />
+
+    <label for="date_fin">Date de fin</label>
+    <input
+      id="date_fin"
+      name="date_fin"
+      value="<%= tasks.date_fin %>"
+      type="date"
+      placeholder="Date de fin ..."
+    />
+
+    <label for="done">Etat</label>
+    <input
+      id="done"
+      name="done"
+      value="<%= tasks.done %>"
+      type="boolean"
+      placeholder="Etat ..."
+    />
+    <button type="submit">Submit</button>
+  </form>
+</body>
+
+<%- include("_footer") %>

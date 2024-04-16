@@ -1,0 +1,37 @@
+<%- include("_header") %>
+
+<body>
+  <h1>Create</h1>
+
+  <form
+    action="/games"
+    method="post"
+  >
+  <p>Saisir votre choix: </p>
+  <br />
+  
+  <button
+    type="button"
+    id="pierre"
+    name="pierre"
+  >Pierre</button>
+
+  
+  <button
+    type="button"
+    id="paille"
+    name="paille"
+  >Paille</button>
+  
+  <button
+    type="button"
+    id="ciseaux"
+    name="ciseaux"
+  >Ciseaux</button>
+
+    <br />
+    <button type="submit">Submit</button><!--pour lancer le jeu-->
+  </form>
+</body>
+
+<%- include("_footer") %>

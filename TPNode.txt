@@ -1,0 +1,3 @@
+Devoir de Penon Mickael.
+Non terminé faute de temps.
+Question: Pour le choix du server fallait-il utiliser un random()?
